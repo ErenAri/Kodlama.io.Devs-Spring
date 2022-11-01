@@ -1,5 +1,6 @@
 package kodlamaIoDevs.kodlamaIoDevs.business.concretes;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import kodlamaIoDevs.kodlamaIoDevs.entities.concretes.Language;
 @Service
 public class LanguageManager implements LanguageService{
 
+	private List<Language> languages = new ArrayList<>();
 	private LanguageRepository languageRepository;
 	
 	@Autowired
