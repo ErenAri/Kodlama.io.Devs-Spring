@@ -17,7 +17,7 @@ public class LanguageManager implements LanguageService{
 	private LanguageRepository languageRepository;
 	
 	@Autowired
-	public LanguageManager(Language language) {
+	public LanguageManager(LanguageRepository languageRepository) {
 		this.languageRepository = languageRepository;
 	}
 	

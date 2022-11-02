@@ -8,8 +8,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Language {
-	private int id;
-	private String name;
+	int id;
+	String name;
+	
+	public Language() {
+	 
+	}
 	
 	public Language(int id, String name) {
 		super();
