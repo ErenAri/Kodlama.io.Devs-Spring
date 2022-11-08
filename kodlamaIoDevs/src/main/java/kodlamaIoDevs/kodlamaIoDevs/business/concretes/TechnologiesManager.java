@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import kodlamaIoDevs.kodlamaIoDevs.business.abstracts.LanguageService;
 import kodlamaIoDevs.kodlamaIoDevs.business.abstracts.TechnologiesService;
@@ -16,6 +17,7 @@ import kodlamaIoDevs.kodlamaIoDevs.dataAccess.abstracts.TechnologiesRepository;
 import kodlamaIoDevs.kodlamaIoDevs.entities.concretes.Language;
 import kodlamaIoDevs.kodlamaIoDevs.entities.concretes.Technologies;
 
+@Service
 public class TechnologiesManager implements TechnologiesService{
 
 	private TechnologiesRepository repository;
